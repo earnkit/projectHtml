@@ -19,16 +19,51 @@
 
     <section>
 
-        <div>
-            <h3>ระดับปานกลาง</h3>
-            <ul style="margin-top: -10px ;">
-                <li><a href="convert_currency.html">แอปแปลงค่าเงิน</a></li>
-                <li><a href="convert_string.html">แปลงตัวอักษรเป็นตัวพิมพ์ใหญ่/เล็ก</a></li>
-                <li><a href="calulator.html">เครื่องคิดเลขพื้นฐาน</a></li>
-            </ul>
+        <h1 class="convert-currency-head">แปลงตัวอักษรเป็นตัวพิมพ์ใหญ่/เล็ก</h1>
+
+        <div class="div-form-convert-currency">
+            <form id="form">
+                <label for="value_lp">ตัวพิมพ์เล็ก : </label>
+                <input id="value_lp" type="text">
+<br/>
+                <label for="value_up">ตัวพิมพ์ใหญ่ : </label>
+                <input id="value_up" type="text">
+            </form>
+
+            <button id="reset" class="reset-convert-currency">Reset</button>
+
         </div>
 
     </section>
+
+
+    <script>
+       
+            document.getElementById("value_lp").addEventListener("input", function () {
+                const value = document.getElementById("value_lp").value
+
+                document.getElementById("value_lp").value = value.toLowerCase();
+                document.getElementById("value_up").value = value.toUpperCase();
+
+            })
+
+
+            document.getElementById("value_up").addEventListener("input", function () {
+                const value = document.getElementById("value_up").value
+
+                document.getElementById("value_lp").value = value.toLowerCase();
+                document.getElementById("value_up").value = value.toUpperCase();
+            })
+
+
+            document.getElementById("reset").addEventListener("click", function () {
+                document.getElementById("value_lp").value = null;
+                document.getElementById("value_up").value = null;
+
+            })
+
+      
+    </script>
 
  
 

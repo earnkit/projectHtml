@@ -19,9 +19,48 @@
 
     <section>
 
-        <h1>แอปแปลงค่าเงิน</h1>
+        <h1 class="convert-currency-head">แปลงค่าเงิน</h1>
+
+        <div class="div-form-convert-currency">
+            <form id="form">
+                <label for="value_usb">USD : </label>
+                <input id="value_usb" type="number">
+<br/>
+                <label for="value_thb">THB :</label>
+                <input id="value_thb" type="number">
+            </form>
+
+            <button id="reset" class="reset-convert-currency">Reset</button>
+
+        </div>
 
     </section>
+
+
+    <script>
+       
+            document.getElementById("value_usb").addEventListener("input", function () {
+                const value = document.getElementById("value_usb").value
+                const result = (value) *  0.030;
+                document.getElementById("value_thb").value = result.toFixed(2);
+            })
+
+
+            document.getElementById("value_thb").addEventListener("input", function () {
+                const value = document.getElementById("value_thb").value
+                const result = (value) * 33.68;
+                document.getElementById("value_usb").value = result.toFixed(2);
+            })
+
+
+            document.getElementById("reset").addEventListener("click", function () {
+                document.getElementById("value_usb").value = null;
+                document.getElementById("value_thb").value = null;
+
+            })
+
+      
+    </script>
 
  
 

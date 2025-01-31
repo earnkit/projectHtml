@@ -113,4 +113,56 @@ ul li a:hover {
     cursor: pointer;
 }
 
+/* ---------------------------------- */
 
+
+.convert-currency-head {
+    justify-content: center;
+    text-align: center;
+    color: rgb(31, 34, 36);
+}
+
+.div-form-convert-currency {
+    display: block;
+    text-align: center;
+}
+
+.reset-convert-currency {
+    background-color: rgb(255, 31, 42);
+    border: white;
+    border-radius: 7%;
+    font-size: 1em;
+    color: white;
+    width: 65px;
+    height: 25px;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+#value_usb{
+    height: 25px;
+    border-radius: 7%;
+}
+
+#value_thb{
+    height: 25px;
+    border-radius: 7%;
+    margin-top: 20px;
+
+}
+
+
+/* ---------------------------------- */
+
+#value_lp{
+    height: 25px;
+    border-radius: 7%;
+}
+
+#value_up{
+    height: 25px;
+    border-radius: 7%;
+    margin-top: 20px;
+
+}
