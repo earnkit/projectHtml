@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Digital Clock</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">หน้าแรก</a>
+            <a href="index.html">ระดับง่าย</a>
+            <a href="../IntermediateLevel/index.html">ระดับปานกลาง</a>
+            <a href="#">ระดับยาก</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="digiC-head">Digital Clock</h1>
+        <script>
+           setInterval(() => {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString(); // แปลงเป็นรูปแบบเวลา
+            document.getElementById("show_time").innerHTML  = timeString + ' น.' ;
+            }, 1000);
+        </script>
+
+        <p id="show_time" ></p> 
+
+    </section>
+
+ 
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Click Counter</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">หน้าแรก</a>
+            <a href="index.html">ระดับง่าย</a>
+            <a href="../IntermediateLevel/index.html">ระดับปานกลาง</a>
+            <a href="#">ระดับยาก</a>
+        </nav>
+    </header>
+
+    <section>
+        
+        <h1 class="clickC-head">Click Counter</h1>
+
+        <center>
+            <button id="delCount" class="del-count">-</button>
+            <b id="show_count" >0</b>
+            <button id="addCount" class="add-count">+</button> 
+            <button id="reset" class="reset-count">Reset</button> 
+        </center>
+  
+
+      
+
+
+        <script>
+            let count = 0;
+            document.getElementById("delCount").addEventListener("click", function(event) {
+                if (count > 0) {
+                count--;
+                document.getElementById("show_count").innerText = count;
+                } else {
+                alert("Count cannot be less than 0!");
+                }
+            });
+
+             document.getElementById("addCount").addEventListener("click", function(event) {
+                count++    ;
+                document.getElementById("show_count").innerText = count;
+            });
+          
+
+            document.getElementById("reset").addEventListener("click", function(event) {
+                count = 0   ;
+                document.getElementById("show_count").innerText = 0;
+            });
+
+        </script>
+        
+
+    </section>
+
+</body>
+</html>

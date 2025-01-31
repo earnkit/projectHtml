@@ -1,0 +1,116 @@
+nav {
+     background-color: #746c6c;
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+ }
+
+ nav a {
+     color: white;
+     text-decoration: none;
+     padding: 14px 20px;
+     text-align: center;
+ }
+
+ nav a:hover {
+     background-color: #575757;
+ }
+
+ ul li a {
+    color: rgb(53, 51, 51);
+    text-decoration: none;
+    text-align: center;
+}
+
+ul li a:hover {
+    color: #3816f7;
+}
+
+/* ------------------------ */
+
+.digiC-head {
+    text-align: center;
+    color: rgb(16, 151, 27);
+}
+
+#show_time {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    color: rgb(255, 42, 42);
+}
+
+/* ---------------------------------- */
+
+.clickC-head {
+    justify-content: center;
+    text-align: center;
+    color: rgb(210, 23, 235);
+}
+
+#show_count {
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    color: rgb(24, 216, 40);
+
+}
+
+
+.del-count {
+    background-color: rgb(255, 173, 162);
+    border: white;
+    border-radius: 5%;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+
+.add-count {
+    background-color: rgb(157, 197, 248);
+    border: white;
+    border-radius: 5%;
+    font-size: 2rem;
+    width: 35px;
+    height: 35px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+.reset-count {
+    background-color: rgb(255, 115, 0);
+    border: white;
+    border-radius: 5%;
+    color: white;
+    width: 65px;
+    height: 25px;
+    margin: 20px;
+    cursor: pointer;
+
+}
+
+
+/* ---------------------------------- */
+
+.Random-head {
+    justify-content: center;
+    text-align: center;
+    color: rgb(2, 175, 255);
+}
+
+
+.btn-random-bg {
+    background-color: rgb(30, 255, 0);
+    font-size: 25px;
+    border: white;
+    border-radius: 5%;
+    height: 55px;
+    cursor: pointer;
+}
+
+

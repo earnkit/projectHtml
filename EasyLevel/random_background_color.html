@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <title>Random Background Color</title>
+
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.5s ease;
+        }
+    
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">หน้าแรก</a>
+            <a href="index.html">ระดับง่าย</a>
+            <a href="../IntermediateLevel/index.html">ระดับปานกลาง</a>
+            <a href="#">ระดับยาก</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1 class="Random-head">Random Background Color</h1>
+        <center>
+            <button id="Random" class="btn-random-bg" onclick="randomBgColor()">Random Background</button>
+        </center>
+
+        <script>
+            function randomBgColor() {
+                const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+                document.body.style.backgroundColor = randomColor;
+            }
+        </script>
+
+    </section>
+</body>
+</html>
